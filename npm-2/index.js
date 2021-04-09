@@ -1,4 +1,8 @@
-// const parseUrl = require('parseUrl');
+try {
+    console.log(`require.resolve('parseUrl'): ${require.resolve('parseUrl')}`)
+} catch (e) {
+    console.error(`💥 ${e.message}`)
+}
 
 const express = require('express')
 const app = express()
